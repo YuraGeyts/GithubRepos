@@ -17,10 +17,11 @@
 		3A9B275825545CA4003CFED2 /* RepositoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9B275725545CA4003CFED2 /* RepositoriesTableViewController.swift */; };
 		3A9B276A25547848003CFED2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9B276925547848003CFED2 /* MainViewController.swift */; };
 		3A9B277125548011003CFED2 /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9B277025548011003CFED2 /* RepositoryTableViewCell.swift */; };
+		3A9B277425548A13003CFED2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9B277325548A13003CFED2 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3A9B272A25545327003CFED2 /* Obrio Test Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Obrio Test Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A9B272A25545327003CFED2 /* GithubRepos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubRepos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A9B272D25545327003CFED2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A9B272F25545327003CFED2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3A9B273425545327003CFED2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -32,6 +33,7 @@
 		3A9B275725545CA4003CFED2 /* RepositoriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesTableViewController.swift; sourceTree = "<group>"; };
 		3A9B276925547848003CFED2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3A9B277025548011003CFED2 /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
+		3A9B277325548A13003CFED2 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +50,7 @@
 		3A9B272125545327003CFED2 = {
 			isa = PBXGroup;
 			children = (
-				3A9B272C25545327003CFED2 /* Obrio Test Project */,
+				3A9B272C25545327003CFED2 /* GithubRepos */,
 				3A9B272B25545327003CFED2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,12 +58,12 @@
 		3A9B272B25545327003CFED2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3A9B272A25545327003CFED2 /* Obrio Test Project.app */,
+				3A9B272A25545327003CFED2 /* GithubRepos.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3A9B272C25545327003CFED2 /* Obrio Test Project */ = {
+		3A9B272C25545327003CFED2 /* GithubRepos */ = {
 			isa = PBXGroup;
 			children = (
 				3A9B272D25545327003CFED2 /* AppDelegate.swift */,
@@ -74,7 +76,7 @@
 				3A9B273825545329003CFED2 /* LaunchScreen.storyboard */,
 				3A9B273B25545329003CFED2 /* Info.plist */,
 			);
-			path = "Obrio Test Project";
+			path = GithubRepos;
 			sourceTree = "<group>";
 		};
 		3A9B2745255454E0003CFED2 /* Model */ = {
@@ -88,9 +90,10 @@
 		3A9B274C255456DD003CFED2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3A9B276925547848003CFED2 /* MainViewController.swift */,
 				3A9B275725545CA4003CFED2 /* RepositoriesTableViewController.swift */,
 				3A9B277025548011003CFED2 /* RepositoryTableViewCell.swift */,
-				3A9B276925547848003CFED2 /* MainViewController.swift */,
+				3A9B277325548A13003CFED2 /* DetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -114,9 +117,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3A9B272925545327003CFED2 /* Obrio Test Project */ = {
+		3A9B272925545327003CFED2 /* GithubRepos */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3A9B273E25545329003CFED2 /* Build configuration list for PBXNativeTarget "Obrio Test Project" */;
+			buildConfigurationList = 3A9B273E25545329003CFED2 /* Build configuration list for PBXNativeTarget "GithubRepos" */;
 			buildPhases = (
 				3A9B272625545327003CFED2 /* Sources */,
 				3A9B272725545327003CFED2 /* Frameworks */,
@@ -126,9 +129,9 @@
 			);
 			dependencies = (
 			);
-			name = "Obrio Test Project";
+			name = GithubRepos;
 			productName = "Obrio Test Project";
-			productReference = 3A9B272A25545327003CFED2 /* Obrio Test Project.app */;
+			productReference = 3A9B272A25545327003CFED2 /* GithubRepos.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -145,7 +148,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3A9B272525545327003CFED2 /* Build configuration list for PBXProject "Obrio Test Project" */;
+			buildConfigurationList = 3A9B272525545327003CFED2 /* Build configuration list for PBXProject "GithubRepos" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -158,7 +161,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3A9B272925545327003CFED2 /* Obrio Test Project */,
+				3A9B272925545327003CFED2 /* GithubRepos */,
 			);
 		};
 /* End PBXProject section */
@@ -188,6 +191,7 @@
 				3A9B273025545327003CFED2 /* SceneDelegate.swift in Sources */,
 				3A9B275825545CA4003CFED2 /* RepositoriesTableViewController.swift in Sources */,
 				3A9B276A25547848003CFED2 /* MainViewController.swift in Sources */,
+				3A9B277425548A13003CFED2 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,7 +340,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R93FX8EKJ9;
-				INFOPLIST_FILE = "Obrio Test Project/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/GithubRepos/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -355,7 +359,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R93FX8EKJ9;
-				INFOPLIST_FILE = "Obrio Test Project/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/GithubRepos/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -370,7 +374,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3A9B272525545327003CFED2 /* Build configuration list for PBXProject "Obrio Test Project" */ = {
+		3A9B272525545327003CFED2 /* Build configuration list for PBXProject "GithubRepos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3A9B273C25545329003CFED2 /* Debug */,
@@ -379,7 +383,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3A9B273E25545329003CFED2 /* Build configuration list for PBXNativeTarget "Obrio Test Project" */ = {
+		3A9B273E25545329003CFED2 /* Build configuration list for PBXNativeTarget "GithubRepos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3A9B273F25545329003CFED2 /* Debug */,

@@ -1,6 +1,5 @@
 //
 //  SceneDelegate.swift
-//  Obrio Test Project
 //
 //  Created by Yura Geyts on 05.11.2020.
 //

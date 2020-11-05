@@ -1,6 +1,5 @@
 //
 //  Repositories.swift
-//  Obrio Test Project
 //
 //  Created by Yura Geyts on 05.11.2020.
 //
@@ -24,9 +23,13 @@ struct Item: Codable {
     
     var name: String
     var starCount: Int
+    var htmlURL: String
+    var description: String
     
     enum CodingKeys: String, CodingKey {
         case name = "name"
         case starCount = "stargazers_count"
+        case htmlURL = "html_url"
+        case description = "description"
     }
 }
