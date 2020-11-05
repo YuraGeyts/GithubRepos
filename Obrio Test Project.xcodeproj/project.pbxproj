@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		3A9B272E25545327003CFED2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9B272D25545327003CFED2 /* AppDelegate.swift */; };
 		3A9B273025545327003CFED2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9B272F25545327003CFED2 /* SceneDelegate.swift */; };
-		3A9B273225545327003CFED2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9B273125545327003CFED2 /* ViewController.swift */; };
 		3A9B273525545327003CFED2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9B273325545327003CFED2 /* Main.storyboard */; };
 		3A9B273725545329003CFED2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A9B273625545329003CFED2 /* Assets.xcassets */; };
 		3A9B273A25545329003CFED2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9B273825545329003CFED2 /* LaunchScreen.storyboard */; };
+		3A9B274325545366003CFED2 /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9B274225545366003CFED2 /* Repositories.swift */; };
+		3A9B275125545704003CFED2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9B275025545704003CFED2 /* NetworkManager.swift */; };
+		3A9B275825545CA4003CFED2 /* RepositoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9B275725545CA4003CFED2 /* RepositoriesTableViewController.swift */; };
+		3A9B276A25547848003CFED2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9B276925547848003CFED2 /* MainViewController.swift */; };
+		3A9B277125548011003CFED2 /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9B277025548011003CFED2 /* RepositoryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3A9B272A25545327003CFED2 /* Obrio Test Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Obrio Test Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A9B272D25545327003CFED2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A9B272F25545327003CFED2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3A9B273125545327003CFED2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3A9B273425545327003CFED2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A9B273625545329003CFED2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A9B273925545329003CFED2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A9B273B25545329003CFED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A9B274225545366003CFED2 /* Repositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
+		3A9B275025545704003CFED2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		3A9B275725545CA4003CFED2 /* RepositoriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesTableViewController.swift; sourceTree = "<group>"; };
+		3A9B276925547848003CFED2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3A9B277025548011003CFED2 /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,49 @@
 			children = (
 				3A9B272D25545327003CFED2 /* AppDelegate.swift */,
 				3A9B272F25545327003CFED2 /* SceneDelegate.swift */,
-				3A9B273125545327003CFED2 /* ViewController.swift */,
-				3A9B273325545327003CFED2 /* Main.storyboard */,
+				3A9B27532554571D003CFED2 /* Manager */,
+				3A9B2745255454E0003CFED2 /* Model */,
+				3A9B274E255456E7003CFED2 /* View */,
+				3A9B274C255456DD003CFED2 /* Controller */,
 				3A9B273625545329003CFED2 /* Assets.xcassets */,
 				3A9B273825545329003CFED2 /* LaunchScreen.storyboard */,
 				3A9B273B25545329003CFED2 /* Info.plist */,
 			);
 			path = "Obrio Test Project";
+			sourceTree = "<group>";
+		};
+		3A9B2745255454E0003CFED2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A9B274225545366003CFED2 /* Repositories.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3A9B274C255456DD003CFED2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3A9B275725545CA4003CFED2 /* RepositoriesTableViewController.swift */,
+				3A9B277025548011003CFED2 /* RepositoryTableViewCell.swift */,
+				3A9B276925547848003CFED2 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3A9B274E255456E7003CFED2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3A9B273325545327003CFED2 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3A9B27532554571D003CFED2 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				3A9B275025545704003CFED2 /* NetworkManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +181,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A9B273225545327003CFED2 /* ViewController.swift in Sources */,
+				3A9B275125545704003CFED2 /* NetworkManager.swift in Sources */,
+				3A9B274325545366003CFED2 /* Repositories.swift in Sources */,
+				3A9B277125548011003CFED2 /* RepositoryTableViewCell.swift in Sources */,
 				3A9B272E25545327003CFED2 /* AppDelegate.swift in Sources */,
 				3A9B273025545327003CFED2 /* SceneDelegate.swift in Sources */,
+				3A9B275825545CA4003CFED2 /* RepositoriesTableViewController.swift in Sources */,
+				3A9B276A25547848003CFED2 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
