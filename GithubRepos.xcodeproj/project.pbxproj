@@ -92,7 +92,6 @@
 			children = (
 				3A9B276925547848003CFED2 /* MainViewController.swift */,
 				3A9B275725545CA4003CFED2 /* RepositoriesTableViewController.swift */,
-				3A9B277025548011003CFED2 /* RepositoryTableViewCell.swift */,
 				3A9B277325548A13003CFED2 /* DetailViewController.swift */,
 			);
 			path = Controller;
@@ -102,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				3A9B273325545327003CFED2 /* Main.storyboard */,
+				3A9B277025548011003CFED2 /* RepositoryTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -341,11 +341,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R93FX8EKJ9;
 				INFOPLIST_FILE = "$(SRCROOT)/GithubRepos/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.geyts.Obrio-Test-Project";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.geyts.Git-Hub-Repos";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -360,11 +361,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R93FX8EKJ9;
 				INFOPLIST_FILE = "$(SRCROOT)/GithubRepos/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.geyts.Obrio-Test-Project";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.geyts.Git-Hub-Repos";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

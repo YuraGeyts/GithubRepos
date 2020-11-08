@@ -12,27 +12,24 @@ class NetworkManager {
     
     var onCompletion: ((Repositories) -> ())?
     
-    func performRequest(with urlString: String) {
-        guard let url = URL(string: urlString) else { return }
-        let session = URLSession(configuration: .default)
-        let task = session.dataTask(with: url) { (data, response, error) in
-            if let data = data {
-                if let repositories = self.parseJSON(withData: data) {
-                    self.onCompletion?(repositories)
-                }
+    func dataFetcher(urlString: String) {
+        request(with: urlString) { (data, error) in
+            let decoder = JSONDecoder()
+            guard let data = data else { return }
+            let response = try? decoder.decode(Repositories.self, from: data)
+            if let repositories = response {
+                self.onCompletion?(repositories)
             }
         }
-        task.resume()
     }
     
-    func parseJSON(withData data: Data) -> Repositories? {
-        let decoder = JSONDecoder()
-        do {
-            let responseRepositoriesData = try decoder.decode(Repositories.self, from: data)
-            return responseRepositoriesData
-        } catch let error as NSError {
-            print(error.localizedDescription)
-        }
-        return nil
+    private func request(with urlString: String, completion: @escaping (Data?, Error?) -> Void) {
+        guard let url = URL(string: urlString) else { return }
+        let request = URLRequest(url: url)
+        URLSession.shared.dataTask(with: request) { (data, response, error) in
+            DispatchQueue.main.async {
+                completion(data, error)
+            }
+        }.resume()
     }
 }

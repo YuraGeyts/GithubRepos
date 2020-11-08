@@ -24,12 +24,22 @@ struct Item: Codable {
     var name: String
     var starCount: Int
     var htmlURL: String
-    var description: String
+    var description: String?
+    var owner: Owner
     
     enum CodingKeys: String, CodingKey {
         case name = "name"
         case starCount = "stargazers_count"
         case htmlURL = "html_url"
         case description = "description"
+        case owner = "owner"
+    }
+}
+
+struct Owner: Codable {
+    var name: String
+
+    enum CodingKeys: String, CodingKey {
+        case name = "login"
     }
 }

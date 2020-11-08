@@ -27,7 +27,7 @@ class MainViewController: UIViewController {
     @IBAction func searchAction(_ sender: Any) {
         guard let reposName = repositoryNameTextField?.text else { return }
         let urlString = "https://api.github.com/search/repositories?q=\(reposName)+language:swift&sort=stars&order=desc"
-        NetworkManager.shared.performRequest(with: urlString)
+        NetworkManager.shared.dataFetcher(urlString: urlString)
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
