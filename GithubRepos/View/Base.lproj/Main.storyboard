@@ -88,12 +88,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Np-S8-8tl">
-                                            <rect key="frame" x="20" y="11" width="41.5" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="JGm-Py-o9I">
                                             <rect key="frame" x="359.5" y="11" width="34.5" height="21"/>
                                             <subviews>
@@ -108,18 +102,35 @@
                                                 </imageView>
                                             </subviews>
                                         </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="kkE-M1-VxP">
+                                            <rect key="frame" x="28" y="11" width="62.5" height="21"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1A-aa-7qt">
+                                                    <rect key="frame" x="0.0" y="0.0" width="18" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Np-S8-8tl">
+                                                    <rect key="frame" x="21" y="0.0" width="41.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="JGm-Py-o9I" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8Np-S8-8tl" secondAttribute="trailing" constant="8" symbolic="YES" id="239-Wx-SC1"/>
                                         <constraint firstItem="JGm-Py-o9I" firstAttribute="trailing" secondItem="F7K-W4-B59" secondAttribute="trailingMargin" id="84j-M1-HHW"/>
-                                        <constraint firstItem="8Np-S8-8tl" firstAttribute="leading" secondItem="F7K-W4-B59" secondAttribute="leadingMargin" id="AtW-l9-na6"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="8Np-S8-8tl" secondAttribute="bottom" id="QLc-TM-xC0"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="kkE-M1-VxP" secondAttribute="bottom" id="9Q5-XC-ouD"/>
+                                        <constraint firstItem="kkE-M1-VxP" firstAttribute="top" secondItem="F7K-W4-B59" secondAttribute="topMargin" id="AIh-3z-aPw"/>
+                                        <constraint firstItem="kkE-M1-VxP" firstAttribute="leading" secondItem="F7K-W4-B59" secondAttribute="leadingMargin" constant="8" id="O6x-BX-kxd"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="JGm-Py-o9I" secondAttribute="bottom" id="V0g-Jy-MwV"/>
                                         <constraint firstItem="JGm-Py-o9I" firstAttribute="top" secondItem="F7K-W4-B59" secondAttribute="topMargin" id="cqR-3P-6Hw"/>
-                                        <constraint firstItem="8Np-S8-8tl" firstAttribute="top" secondItem="F7K-W4-B59" secondAttribute="topMargin" id="xlV-0R-OLF"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="cellNumber" destination="M1A-aa-7qt" id="yxe-5N-dZy"/>
                                     <outlet property="nameLabel" destination="8Np-S8-8tl" id="XrM-qh-WpA"/>
                                     <outlet property="starLabel" destination="mst-J0-VKp" id="dnt-fx-Axg"/>
                                 </connections>

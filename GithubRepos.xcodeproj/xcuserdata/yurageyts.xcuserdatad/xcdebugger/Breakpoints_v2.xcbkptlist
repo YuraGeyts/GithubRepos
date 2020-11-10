@@ -52,5 +52,133 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AFA833DB-AB12-4C9E-9816-326CDB1E7527"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GithubRepos/Controller/MainViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "searchAction(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AFA833DB-AB12-4C9E-9816-326CDB1E7527 - b4ce8e18e905be8c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GithubRepos.MainViewController.searchAction(Any) -&gt; ()"
+                  moduleName = "GithubRepos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yurageyts/Documents/Projects/GithubRepos/GithubRepos/Controller/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "2152">
+               </Location>
+               <Location
+                  uuid = "AFA833DB-AB12-4C9E-9816-326CDB1E7527 - f0575092d434d971"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in GithubRepos.MainViewController.searchAction(Any) -&gt; ()"
+                  moduleName = "GithubRepos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yurageyts/Documents/Projects/GithubRepos/GithubRepos/Controller/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "33">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FF23425F-79D4-4BB6-BC81-EA6B4013C760"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GithubRepos/Controller/RepositoriesTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FF23425F-79D4-4BB6-BC81-EA6B4013C760 - dd562f5507eb9305"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (GithubRepos.Repositories) -&gt; () in GithubRepos.RepositoriesTableViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "GithubRepos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yurageyts/Documents/Projects/GithubRepos/GithubRepos/Controller/RepositoriesTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "231">
+               </Location>
+               <Location
+                  uuid = "FF23425F-79D4-4BB6-BC81-EA6B4013C760 - 9bb04721ade5e117"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (GithubRepos.Repositories) -&gt; () in GithubRepos.RepositoriesTableViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "GithubRepos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yurageyts/Documents/Projects/GithubRepos/GithubRepos/Controller/RepositoriesTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "164">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "79EC9778-D5CB-409D-9250-7E0929E3F1A8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GithubRepos/Controller/RepositoriesTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F52B6EC9-D19E-4239-9A0F-6C437035CA00"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GithubRepos/Controller/RepositoriesTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

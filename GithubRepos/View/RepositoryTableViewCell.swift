@@ -10,9 +10,12 @@ class RepositoryTableViewCell: UITableViewCell {
 
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var starLabel: UILabel!
+    @IBOutlet weak var cellNumber: UILabel!
     
-    func configure(with item: Item) {
+    
+    func configure(with item: Item, cellIndex: Int) {
         nameLabel.text = item.name
         starLabel.text = String(describing: item.starCount)
+        cellNumber.text = String(cellIndex)
     }
 }
