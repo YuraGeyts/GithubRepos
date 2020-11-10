@@ -22,7 +22,7 @@ class MainViewController: UIViewController {
         firstQueue.async {
             NetworkManager.shared.dataFetcher(urlString: urlStringPage1)
         }
-        secondQueue.async {
+        secondQueue.asyncAfter(deadline: .now() + 1) {
             NetworkManager.shared.dataFetcher(urlString: urlStringPage2)
         }
         performSegue(withIdentifier: "showRepositoriesSegue", sender: nil)

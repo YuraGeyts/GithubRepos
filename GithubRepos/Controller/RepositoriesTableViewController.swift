@@ -17,13 +17,8 @@ class RepositoriesTableViewController: UITableViewController {
         
         NetworkManager.shared.onCompletion = { fetchedRepositories in
             DispatchQueue.main.async {
-                if self.repositories.first?.starCount ?? 0 > fetchedRepositories.items.first?.starCount ?? 0 {
-                    self.repositories.append(contentsOf: fetchedRepositories.items)
-                    self.tableView.reloadData()
-                } else {
-                    self.repositories.insert(contentsOf: fetchedRepositories.items, at: 0)
-                    self.tableView.reloadData()
-                }
+                self.repositories.append(contentsOf: fetchedRepositories.items)
+                self.tableView.reloadData()
             }
         }
     }
